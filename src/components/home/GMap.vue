@@ -6,6 +6,7 @@
 
 <script>
 import firebase from 'firebase'
+import db from '@/firebase/init'
 export default {
     name: 'Gmap',
     data(){
@@ -23,14 +24,47 @@ export default {
                 minZoom: 3,
                 streetViewControl: false
             })
+
+            db.collection('users').get().then(users =>{
+                users.docs.forEach(doc =>{
+                    let data = doc.data()
+                    console.log(data.geolocation.lat,data.geolocation.lng)
+                    if(data.geolocation){
+                        let marker = new google.maps.Marker({
+                            position: {
+                                lat: data.geolocation.lat,
+                                lng: data.geolocation.lng
+                            }
+                        })
+                        marker.setMap(map);
+                        marker.addListener('click', () => {
+                            this.$router.push({name: 'ViewProfile', params: {id: doc.id}})
+                        })
+                    }
+                })
+            })
         }
     },
     mounted(){
+        let user = firebase.auth().currentUser
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition((pos) => {
                 this.lat = pos.coords.latitude
                 this.lng = pos.coords.longitude
-                this.renderMap()
+                // update user's coords
+                db.collection('users').where('user_id', '==', user.uid)
+                .get().then(snapshot => {
+                    snapshot.forEach((doc) => {
+                        db.collection('users').doc(doc.id).update({
+                            geolocation: {
+                                lat: pos.coords.latitude,
+                                lng: pos.coords.longitude
+                            }
+                        })
+                    })
+                }).then(() => {
+                    this.renderMap()
+                })
             }
             ,(e) => {console.log(e); this.renderMap()}
             ,{maximumAge: 60000, timeout: 3000})
