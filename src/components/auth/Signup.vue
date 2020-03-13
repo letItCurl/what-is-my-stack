@@ -4,15 +4,15 @@
             <h2 class="center deep-purple-text">Signup</h2>
             <div class="field">
                 <label for="email">Email: </label>
-                <input type="email" v-model="email">
+                <input type="email" v-model="email" autocomplete="off">
             </div>
             <div class="field">
                 <label for="password">Password: </label>
-                <input type="password" v-model="password">
+                <input type="password" v-model="password" autocomplete="off">
             </div>
             <div class="field">
                 <label for="alias">Alias: </label>
-                <input type="text" v-model="alias">
+                <input type="text" v-model="alias" autocomplete="off">
             </div>
             <p class="red-text center" v-if="feedback">{{feedback}}</p>
             <div class="field center">
@@ -56,10 +56,16 @@ export default {
                     }
                     else{
                         firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+                        .then(cred => {
+                            ref.set({
+                                alias: this.alias,
+                                geolocation: null,
+                                user_id: cred.user.uid
+                            }).then(() => this.$router.push({name: 'GMap'}))
+                        })
                         .catch(e => {console.log(e); this.feedback = e.message})
-                        this.feedback = 'this alias is free to use'
+                        this.feedback = 'Loging...'
                     }})
-                console.log(this.slug)
             }else{
                 this.feedback = "you must fill all fields"
             }
