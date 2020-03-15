@@ -42,4 +42,4 @@ This can be a huge advantage.
 
 - <a href="https://github.com/letItCurl/vue-my-smoothies/">Project one</a>
 - <a href="https://github.com/letItCurl/power-chat-vue/">Project two</a>
-- Project three | you are here
+- Project three | You are here
