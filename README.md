@@ -35,7 +35,7 @@ Vue has the adventage to focus all potential problems in one file, since, in the
 This can be a huge advantage.
 
 # How I feel after this 16h straight for those 3 projects:
-***I's feels awesome to learn fast !***
+***It's feels awesome to learn fast !***
 <p align="center">
 <img src="https://media2.giphy.com/media/QDnqKvag6AqdO/source.gif">
 </p>
