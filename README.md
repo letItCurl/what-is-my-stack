@@ -11,7 +11,7 @@ Show me your stack !
 Second day on learning Vue.JS.
 First project, the goal is to learn vue in 48h.
 
-Two more projects to go!
+it was the last one for this 48h rush ! 👍
 
 # <a class='text-center' href="https://what-is-my-stack.firebaseapp.com/login">Or click here to try it in your browser!</a>
 
