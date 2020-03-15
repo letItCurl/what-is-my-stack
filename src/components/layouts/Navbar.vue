@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar">
+    <div class="Navbar">
         <nav class="deep-purple darken-1">
             <div class="container">
                 <router-link :to="{name: 'GMap'}" class="brand-logo left">What is my stack !</router-link>
