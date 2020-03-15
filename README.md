@@ -7,12 +7,20 @@
 ***click on the GIF for a video prewiev***
 
 Show me your stack !
+This app is made for developer who need to exchange on their secrets technical skills.
 
 Second day on learning Vue.JS.
-First project, the goal is to learn vue in 48h.
-
-it was the last one for this 48h rush ! 👍
+It was the last one for this 48h rush ! 👍
 
 # <a class='text-center' href="https://what-is-my-stack.firebaseapp.com/login">Or click here to try it in your browser!</a>
-
 > Db and hosting in firebase.
+
+# How to test ?
+tutorial for chrome:
+- open one windows and another in incognito. 
+- change the location of one of them:
+<p align="center">
+  <img src="https://res.cloudinary.com/duydvdaxd/image/upload/v1584302341/Vue-Sprint/changelocation_zwoii4.gif">
+</p>
+- create on acount, then the other.
+- you are good to go !
