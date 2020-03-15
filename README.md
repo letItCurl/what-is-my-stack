@@ -19,8 +19,10 @@ It was the last one for this 48h rush ! 👍
 tutorial for chrome:
 - open one windows and another in incognito. 
 - change the location of one of them:
+
 <p align="center">
   <img src="https://res.cloudinary.com/duydvdaxd/image/upload/v1584302341/Vue-Sprint/changelocation_zwoii4.gif">
 </p>
+
 - create on acount, then the other.
 - you are good to go !
