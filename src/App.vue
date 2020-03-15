@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <NavbarMobile v-if="windowSize()"/>
-    <Navbar v-if="!windowSize()"/>
+    <Navbar/>
     <router-view/>
   </div>
 </template>

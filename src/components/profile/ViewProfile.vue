@@ -4,7 +4,7 @@
             <h2 class="deep-purple-text center">{{profile.alias}}'s Wall</h2>
             <ul class="comments collection">
                 <li v-for="(comment, index) in comments" :key="index">
-                    <div class="deep-purple-text">{{comment.from}}</div>
+                    <div :class="iam(comment.from)">{{comment.from}}</div>
                     <div class="grey-text text-darken-2">{{comment.content}}</div>
                 </li>
             </ul>
@@ -31,7 +31,7 @@ export default {
             feedback: null,
             newComment: null,
             user: null,
-            comments: []
+            comments: [],
         }
     },
     created(){
@@ -78,6 +78,13 @@ export default {
                 })
             }else{
                 this.feedback = 'you must enter a comment'
+            }
+        },
+        iam(commentFrom){
+            if(commentFrom == this.user.id){
+                return 'red-text'
+            }else{
+                return 'deep-purple-text'
             }
         }
     }
