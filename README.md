@@ -34,8 +34,8 @@ Vue has the adventage to focus all potential problems in one file, since, in the
 
 This can be a huge adventage.
 
-# How I feel after this 16h in row for those 3 projects:
-
+# How I feel after this 16h straight for those 3 projects:
+***I LEARN VUE***
 <p align="center">
 <img src="https://media2.giphy.com/media/QDnqKvag6AqdO/source.gif">
 </p>
