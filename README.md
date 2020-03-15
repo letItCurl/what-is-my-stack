@@ -3,7 +3,7 @@
 <p align="center">
 <a href="https://res.cloudinary.com/duydvdaxd/video/upload/v1584300452/Vue-Sprint/what_is_my_stack_1_xpxz5m.mp4"><img src="https://res.cloudinary.com/duydvdaxd/image/upload/v1584300890/Vue-Sprint/what_is_my_stack_biz3wn.gif"></a>
 </p>
-
+<img src="https://res.cloudinary.com/duydvdaxd/image/upload/v1584300890/Vue-Sprint/what_is_my_stack_biz3wn.gif">
 ***click on the GIF for a video prewiev***
 
 Show me your stack !
