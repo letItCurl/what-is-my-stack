@@ -39,3 +39,7 @@ This can be a huge advantage.
 <p align="center">
 <img src="https://media2.giphy.com/media/QDnqKvag6AqdO/source.gif">
 </p>
+
+- <a href="https://github.com/letItCurl/vue-my-smoothies/">Project one</a>
+- <a href="https://github.com/letItCurl/power-chat-vue/">Project two</a>
+- Project three | you are here
