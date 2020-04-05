@@ -27,7 +27,7 @@ tutorial for chrome:
 - create on acount, then the other.
 - you are good to go !
 
-# Finnal thought
+# Final thought
 The vue frontend framework is not far from React. It has the adventage to have a more homogenous environment. In react we have hooks, module components, redux, redux-routes, redux-thunk... and each of them has a "clone" library.
 
 Vue has the adventage to focus all potential problems in one file, since, in the .vue files, script / Style / Html are toegether.
