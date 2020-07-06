@@ -1,4 +1,5 @@
 # what-is-my-stack
+> Just trainning vue.js stuff 😏
 
 <p align="center">
 <a href="https://res.cloudinary.com/duydvdaxd/video/upload/v1584300452/Vue-Sprint/what_is_my_stack_1_xpxz5m.mp4"><img src="https://res.cloudinary.com/duydvdaxd/image/upload/v1584301547/Vue-Sprint/what_is_my_stack_1_eqvrmw.gif"></a>
@@ -12,7 +13,7 @@ This app is made for developer who need to exchange on their secrets technical s
 Second day on learning Vue.JS.
 It was the last one for this 48h rush ! 👍
 
-# <a class='text-center' href="https://what-is-my-stack.firebaseapp.com/login">Or click here to try it in your browser!</a>
+<a class='text-center' href="https://what-is-my-stack.firebaseapp.com/login">Or click here to try it in your browser!</a>
 > Db and hosting in firebase.
 
 # How to test ?
